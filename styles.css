@@ -10,3 +10,22 @@
 .header {
 	background: #cfe5ef;
 }
+
+.section {
+	height: 50px;
+	float: left;
+}
+
+.sb11 {
+	width: 1157px;
+	background-color: #e2e2e2;
+	border: 1px;
+	border-color: #9f9f9f;
+}
+
+.sb12 {
+	width: 96px;
+	background-color: #e2e2e2;
+	border: 1px;
+	border-color: #9f9f9f;
+}
