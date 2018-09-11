@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Arial; /* Font name */
+    src: url(./fonts/Arial.woff); /* File path (font's location) */
+    font-family: Roboto; /* Font name */
+    src: url(./fonts/Roboto-Bold.woff2); /* File path (font's location) */
+    font-family: Myriad Pro; /* Font name */
+    src: url(./fonts/myriadpro.woff2); /* File path (font's location) */
+}
+
+.header {
+	background: #cfe5ef;
+}
