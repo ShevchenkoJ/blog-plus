@@ -16,6 +16,15 @@ body {
 
 .header {
 	background: #cfe5ef;
+	width: 100%;
+}
+
+.central-section {
+	width: 65.29%;
+	max-width: 1253px;
+	background: #cfe5ef;
+	display: inline-block;
+	text-align: left;
 }
 
 .container {
@@ -96,12 +105,24 @@ body {
 }
 
 .section2 {
-	height: 50px;
+	height: auto;
+	width: 100%;
+	margin-bottom: 21px;
 	float: left;
-	margin: 21px;
+	
+}
+
+.section_inner_pad {
 	border: 1px solid #9f9f9f;
-	box-sizing: padding-box, border-box;
 	background-color: #e2e2e2;
+	height: 50px;
+	margin-right: 21px;
+}
+
+.section_inner {
+	border: 1px solid #9f9f9f;
+	background-color: #e2e2e2;
+	height: 50px;
 }
 
 .sb11pad {
@@ -109,7 +130,7 @@ body {
 }
 
 .sb12pad {
-	width: 8.54%;
+	width: 6.86%;
 }
 
 .sb21pad {
@@ -117,37 +138,37 @@ body {
 }
 
 .sb22pad {
-	width: 16.92%;
+	width: 15.24%;
 }
 
 .sb31pad {
-	width: 75.34%;
+	width: 74.54%;
 }
 
 .sb32pad {
-	width: 24.66%;
+	width: 23.78%
 }
 
 .sb41pad {
-	width: 66.96%;
+	width: 66.08%;
 }
 
 .sb42pad {
-	width: 33.04%;
+	width: 32.24%;
 }
 
 .sb51pad {
-	width: 58.50%;
+	width: 57.70%;
 }
 
 .sb52pad {
-	width: 41.50%;
+	width: 40.62%;
 }
 
 .sb61pad {
-	width: 50.40%;
+	width: 49.24%;
 }
 
 .sb62pad {
-	width: 49.60%;
+	width: 49.08%;
 }
