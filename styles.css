@@ -3,6 +3,8 @@
     src: url(./fonts/Arial.woff); /* File path (font's location) */
     font-family: Roboto; /* Font name */
     src: url(./fonts/Roboto-Bold.woff2); /* File path (font's location) */
+    font-family: Roboto-BlackItalic.woff2; /* Font name */
+    src: url(./fonts/Roboto-BlackItalic.woff2); /* File path (font's location) */
     font-family: Myriad Pro; /* Font name */
     src: url(./fonts/myriadpro.woff2); /* File path (font's location) */
 }
@@ -25,6 +27,9 @@ header {
 	max-width: 1253px;
 	background: #cfe5ef;
 	display: inline-block;
+	font-family: Roboto, Myriad Pro;
+	text-transform: uppercase;
+	color: #333;
 	text-align: left;
 }
 
@@ -37,6 +42,9 @@ header {
 .logo-text { 
 	float: left;
 	margin: 58px 47px 58px 0px;
+	font-family: Roboto-BlackItalic, Myriad Pro;
+	font-weight: black;
+	font-style: italic;
 	font-size: 34px;
 }
 
@@ -54,7 +62,11 @@ nav li {
   display: inline-block; /*один из способов разместить элементы в строку*/
   margin: 68px 9px;
   font-size: 15px;
-  text-decoration: none;
+}
+
+a {
+text-decoration: none;
+color: #333;
 }
 
 button { 
