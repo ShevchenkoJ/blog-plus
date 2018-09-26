@@ -1,12 +1,10 @@
 @font-face {
     font-family: Arial; /* Font name */
     src: url(./fonts/Arial.woff); /* File path (font's location) */
-    font-family: Roboto; /* Font name */
-    src: url(./fonts/Roboto-Bold.woff2); /* File path (font's location) */
     font-family: Roboto-BlackItalic.woff2; /* Font name */
     src: url(./fonts/Roboto-BlackItalic.woff2); /* File path (font's location) */
     font-family: Myriad Pro; /* Font name */
-    src: url(./fonts/myriadpro.woff2); /* File path (font's location) */
+    src: url(/fonts/myriadpro.woff2); /* File path (font's location) */
 }
 
 body {
@@ -42,27 +40,65 @@ header {
 .logo-text { 
 	float: left;
 	margin: 58px 47px 58px 0px;
-	font-family: Roboto-BlackItalic, Myriad Pro;
-	font-weight: black;
+	font-family: "Roboto-BlackItalic", "Myriad Pro";
+	font-weight: 600;
 	font-style: italic;
-	font-size: 34px;
+	font-size: 48px;
 }
 
-nav {
-	float: left;
+ /*trying styles for navigation*/
+
+ ul.menu > li {
+    float: left;
+    position: relative;
+    margin: 45px 9px;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    display: inline-block;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: #fff;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 154.55%;
+    max-width: 187px;
+    height: 128px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    text-align: center;
 }
 
-nav li {
-  display: inline-block; /*один из способов разместить элементы в строку*/
-  margin: 68px 9px;
-  font-size: 15px;
+ul.submenu > li {
+    display: block;
 }
+
+ul.submenu > li > a {
+    display: block;
+    color: #333;
+    text-transform: none;
+    text-decoration: none;
+}
+
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+/*end trying*/
 
 a {
 text-decoration: none;
@@ -73,7 +109,8 @@ button {
 	color: #333;
 	background: #fff;
 	float: right;
-	font-size: 18px;
+	font-size: 20px;
+	text-transform: uppercase;
 	margin: 45px 0px;
 	outline: none;
 	border: none;
