@@ -1,6 +1,8 @@
 @font-face {
     font-family: Arial; /* Font name */
     src: url(./fonts/Arial.woff); /* File path (font's location) */
+    font-family: Roboto-Bold.woff2; /* Font name */
+    src: url(./fonts/Roboto-Bold.woff2); /* File path (font's location) */
     font-family: Roboto-BlackItalic.woff2; /* Font name */
     src: url(./fonts/Roboto-BlackItalic.woff2); /* File path (font's location) */
     font-family: Myriad Pro; /* Font name */
@@ -18,7 +20,7 @@ header {
 	background: #cfe5ef;
 	width: 100%;
 	height: 150px;
-	font-family: Roboto, Myriad Pro;
+	font-family: Roboto, "Myriad Pro";
 }
 
 .container {
@@ -29,7 +31,7 @@ header {
 }
 
 header > .container {
-	font-family: Roboto, Myriad Pro;
+	font-family: Roboto, "Myriad Pro";
 	text-transform: uppercase;
 	color: #333;
 }
@@ -72,18 +74,27 @@ ul.menu > li > a {
     text-decoration: none;
 }
 ul.menu > li > a:hover {
+    font-family: "Roboto-Bold", "Myriad Pro";
+    font-weight: 400;
     color: #52359d;
+    text-decoration: underline;
 }
 
 ul.menu > li > a:active {
+    font-family: "Roboto-Bold", "Myriad Pro";
+    font-weight: 400;
     color: #333;
     text-decoration: underline;
 }
 
 ul.menu > li:hover > a.dropdown {
 	background-color: #fff;
-	color: #333;
 }
+
+ul.menu > li:active > a.dropdown {
+	background-color: #fff;
+}
+
 
 ul.submenu {
     display: none;
@@ -129,19 +140,25 @@ a.button {
 }
 
 a.button:hover {
-	color: #52359d;
+	color: #fff;
+	background-color: #52359d;
 }
 
 a.button:active {
-	color: #333;
-	text-decoration: underline;
+	color: #999;
+	background-color: #333;
 }
 
-.h2 {
+h2 {
 	font-family: Roboto, Myriad Pro;
 	font-weight: bold;
 	font-size: 24px;
-	text-decoration: underline;
+}
+
+.underline {
+	border-bottom: 5px solid #c3c3c3;
+    display: inline-block;
+    width: 200px;
 }
 
 .row {
